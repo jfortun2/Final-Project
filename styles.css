@@ -7,3 +7,12 @@ p{
 }
 
 
+body {
+    width: 90%;
+    margin: auto;
+
+}
+
+#heroimage {
+    width: 100%;
+}
