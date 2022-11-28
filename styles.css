@@ -29,7 +29,11 @@ div {
   margin: 0 auto;
   padding-bottom: 80px;
   text-align: center;
+}
 
+.Section1 {
+  margin: auto;
+  width: 90%;
 }
 
 
