@@ -7,20 +7,17 @@ p{
 }
 
 
-body {
+/* body {
     width: 90%;
     margin: auto;
 
-}
+
+} */
 
 #heroimage {
     width: 100%;
 }
 
-body{
-    margin-top:20px;
-    background:#eee;
-}
 
 div {
   display: block;
@@ -31,6 +28,7 @@ div {
   background-color: aqua;
   margin: 0 auto;
   padding-bottom: 80px;
+  text-align: center;
 
 }
 
