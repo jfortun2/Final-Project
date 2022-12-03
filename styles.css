@@ -1,5 +1,5 @@
 p{
-    color: black;
+    color:#DCAB4F;
 }
 
 .headerimg {
@@ -40,10 +40,25 @@ body {
   color: #DCAB4F;
   font-family: 'Spectral', serif;
   font-size: 84px;
-  text-align: center;
-  padding-top: 700px;
+  /* text-align: center; */
+  padding-top: 250px;
   /* display: flex;
   justify-content: center; */
+}
+
+#logo {
+
+  padding-top: 50px;
+
+}
+
+#Graphic {
+  padding-top: 300px;
+}
+
+#Arrow {
+  width:100px;
+  padding-top: 100px;
 }
 
 
