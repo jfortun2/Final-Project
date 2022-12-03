@@ -7,21 +7,21 @@ p{
 }
 
 
-/* body {
+body {
     width: 90%;
     margin: auto;
+    background-color: black;
 
-
-} */
+}
 
 #heroimage {
     width: 100%;
 }
 
 
-div {
+/* div {
   display: block;
-}
+} */
 
 
 .landing-page-container {
@@ -34,6 +34,16 @@ div {
 .Section1 {
   margin: auto;
   width: 90%;
+}
+
+#Title {
+  color: #DCAB4F;
+  font-family: 'Spectral', serif;
+  font-size: 84px;
+  text-align: center;
+  padding-top: 700px;
+  /* display: flex;
+  justify-content: center; */
 }
 
 
