@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap" rel="stylesheet">
-    <script src="jquery-3.6.1.min.js" defer></script>
-    <script src="js/jquery-1.x.x.min.js"></script>
-    <script src="js/jquery.timelinr-x.x.x.js"></script>
-    <script src="main.js" defer></script>
+    <script src="js/jquery-3.6.1.min.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 
   </head>
@@ -32,13 +30,6 @@
                
               </div>
 
-              <!-- <div class="col-xs-2 col-lg-2 d-flex justify-content-end">
-                <p class="header">Notes</p>
-               </div>
-
-
-            </div>
-          </div> -->
 
 
     
@@ -47,7 +38,6 @@
 
 
     <main>
-
 
 
         <div class="container-fluid">
@@ -74,31 +64,137 @@
             <div class="col-xs-8 col-lg-4 d-flex justify-content-center"> 
                 <img id="Arrow" src="Assets/2x/Asset 1@2x.png" alt="arrow">
 
-            <!-- <div class="col-xs-2 col-lg-4"> 
-            </div> -->
        </div>
 
-       https://www.youtube.com/watch?v=oXLha6A4gjc
-       
-        
+       <!-- Timeline -->
 
-       <div id="timeline">
-        <ul id="dates">
-           <li><a href="#">1900</a></li>
-           <li><a href="#">date2</a></li>
-        </ul>
-        <ul id="issues">
-           <li id="date1">
-              <p>Lorem ipsum.</p>
-           </li>
-           <li id="date2">
-              <p>Lorem ipsum.</p>
-           </li>
-        </ul>
-        <a href="#" id="next">+</a> <!-- optional -->
-        <a href="#" id="prev">-</a> <!-- optional -->
-     </div>
- 
+       <section class="cd-horizontal-timeline">
+        <div class="timeline">
+            <div class="events-wrapper">
+                <div class="events">
+                    <ol>
+                        <li><a href="#0" data-date="16/01/2014" class="selected">Early Years</a></li>
+                        <li><a href="#0" data-date="28/02/2014">1900s</a></li>
+                        <li><a href="#0" data-date="20/04/2014">1940s</a></li>
+                        <li><a href="#0" data-date="20/05/2014">1950s</a></li>
+                        <li><a href="#0" data-date="09/07/2014">1960s</a></li>
+                        <li><a href="#0" data-date="30/08/2014">1970s</a></li>
+                        <li><a href="#0" data-date="15/09/2014">Today</a></li>
+                    </ol>
+    
+                    <span class="filling-line" aria-hidden="true"></span>
+                </div> <!-- .events -->
+            </div> <!-- .events-wrapper -->
+                
+            <ul class="cd-timeline-navigation">
+                <li><a href="#0" class="prev inactive">Prev</a></li>
+                <li><a href="#0" class="next">Next</a></li>
+            </ul> <!-- .cd-timeline-navigation -->
+        </div> <!-- .timeline -->
+    
+        <div class="events-content">
+            
+            <ol>
+                <li class="selected">
+                
+                    <h3 class="Eventheader">The Smoky City</h3>
+
+                
+                    <img class = "Eventimg" src="Assets/Polution Problem 1.jpeg" alt="Smoggy Pittsburgh">
+                   
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="28/02/2014">
+                    <h2>Event title here</h2>
+                    <em>February 28th, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="20/04/2014">
+                    <h2>Event title here</h2>
+                    <em>March 20th, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="20/05/2014">
+                    <h2>Event title here</h2>
+                    <em>May 20th, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="09/07/2014">
+                    <h2>Event title here</h2>
+                    <em>July 9th, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="30/08/2014">
+                    <h2>Event title here</h2>
+                    <em>August 30th, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="15/09/2014">
+                    <h2>Event title here</h2>
+                    <em>September 15th, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="01/11/2014">
+                    <h2>Event title here</h2>
+                    <em>November 1st, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="10/12/2014">
+                    <h2>Event title here</h2>
+                    <em>December 10th, 2014</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="19/01/2015">
+                    <h2>Event title here</h2>
+                    <em>January 19th, 2015</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+    
+                <li data-date="03/03/2015">
+                    <h2>Event title here</h2>
+                    <em>March 3rd, 2015</em>
+                    <p>	
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    </p>
+                </li>
+            </ol>
+        </div> <!-- .events-content -->
+    </section>
+
+
+
+
+
+
     
 
     </main>
