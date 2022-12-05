@@ -1,9 +1,34 @@
 
-/* Basic formatting */
 
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
+
+/* Basic formatting */
+
+button{
+  background-color: transparent;
+  stroke: none;
+  border: none;
+  outline:none;
+  
+}
+
+button:active{
+  background-color: transparent;
+  stroke: none;
+  border: none;
+  outline:none;
+}
+
+button:focus{
+  background-color: transparent;
+  stroke: none;
+  border: none;
+  outline:none;
+}
+
 
 #FooterText{
   color: #DCAB4F;
@@ -76,7 +101,11 @@ body {
 #Arrow {
   width:100px;
   padding-top: 150px;
-  padding-bottom: 300px;
+  padding-bottom: 10px;
+}
+
+#Arrow::selection {
+  background-color: transparent;
 }
 
 /* Text Highlight */
@@ -190,6 +219,7 @@ Main Components
 .cd-horizontal-timeline.loaded {
   /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
+  padding-top: 300px;
 }
 .cd-horizontal-timeline .timeline {
   position: relative;
