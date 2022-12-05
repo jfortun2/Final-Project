@@ -26,6 +26,8 @@
 
     <header>
 
+        <!-- Logo in left top corner w/ Bootstrap grid -->
+
         <div class="container-fluid">
             <div class="row">
               <div class="col-xs-2 col-lg-2">
@@ -36,8 +38,6 @@
                
               </div>
 
-
-
     
     </header>
 
@@ -45,8 +45,9 @@
 
     <main>
 
-        
 
+        
+        <!-- Title -->
         <div class="container-fluid">
 
             <div class="row">
@@ -62,16 +63,18 @@
                 </div>
             </div>
 
-
+        <!-- Scroll down button -->
        <div class="container-fluid">
         <div class="row">
             <div class="col-xs-2 col-lg-4"> 
             </div>
 
             <div class="col-xs-8 col-lg-4 d-flex justify-content-center"> 
-                <button type="button" onclick="">
-                <img id="Arrow" class="btn bg-transparent"src="Assets/2x/Asset 1@2x.png" alt="arrow">
+                
+                <button type="button" onclick="myScrollFunction()">
+                <img id="Arrow" class="btn bg-transparent" src="Assets/2x/Asset 1@2x.png" alt="arrow">
                 </button>
+
             </div>
 
 
@@ -80,7 +83,7 @@
 
        <section class="cd-horizontal-timeline">
         <div class="timeline">
-            <div class="events-wrapper">
+            <div class="events-wrapper"id="scroll-timeline">
                 <div class="events">
                     <ol>
                         <li><a href="#0" data-date="16/01/2014" class="selected">Early Years</a></li>
@@ -367,18 +370,16 @@
 
     <!-- Smoke inspired by https://codepen.io/manuelcoluccia/pen/zYZYyrV -->
 
-<footer>
     <section class="Smokingsection">
     
         <p class="text" id="SmokeText"> What will YOUR future look like?</p>
 
     </section>
 
+    <!-- Footer w/ my name and smoke effect-->
+    <footer>
     <p id="FooterText"> PUI Final Project by Jessica Fortunato 2022 </p>
-
-
-
-</footer>
+    </footer>
 
 
 </body> 

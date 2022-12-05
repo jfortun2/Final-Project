@@ -1,5 +1,13 @@
+// Scroll into place
 
-// smokkkke inspired by https://codepen.io/manuelcoluccia/pen/zYZYyrV
+function myScrollFunction (){
+	const element = document.getElementById("scroll-timeline");
+	element.scrollIntoView();
+}
+
+
+
+// smoke inspired by https://codepen.io/manuelcoluccia/pen/zYZYyrV
 const text = document.querySelector('.text');
 text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
 
@@ -13,8 +21,6 @@ for (let i = 0; i < letters.length; i++) {
 
   
 
-
-
 // Highlight based on https://braydoncoyer.dev/blog/change-text-highlight-color-with-css
 const colors = ["#DCAB4F", "#8CA592", "#C17F29", "#F6D13A", "#EAB003"];
 
@@ -22,8 +28,9 @@ window.addEventListener("mousedown", () => {
 	const color = colors.shift();
   document.documentElement.style.setProperty("--highlight-color", color);
   colors.push(color);
-	// code will go here
   });
+
+
 
 
 // Timeline based on https://codepen.io/ritz078/pen/LGRWjE

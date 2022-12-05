@@ -173,7 +173,7 @@ section .active{
 
 #SmokeText {
   color:#DCAB4F;
-  font-size: xx-large;
+  font-size: 3em;
   font-family: 'Spectral', serif;
   text-align: center;
   padding-top: 100px;
