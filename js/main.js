@@ -1,4 +1,55 @@
-// Timeline
+
+// smokkkke inspired by https://codepen.io/manuelcoluccia/pen/zYZYyrV
+const text = document.querySelector('.text');
+text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
+
+const letters = document.querySelectorAll('span');
+for (let i = 0; i < letters.length; i++) {
+	letters[i].addEventListener('mouseover',function(){
+		letters[i].classList.add('active');
+	})
+	
+}
+
+$(document).ready(function(){
+	// Add smooth scrolling to all links
+	$("a").on('click', function(event) {
+  
+	  // Make sure this.hash has a value before overriding default behavior
+	  if (this.hash !== "") {
+		// Prevent default anchor click behavior
+		event.preventDefault();
+  
+		// Store hash
+		var hash = this.hash;
+  
+		// Using jQuery's animate() method to add smooth page scroll
+		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		$('html, body').animate({
+		  scrollTop: $(hash).offset().top
+		}, 800, function(){
+  
+		  // Add hash (#) to URL when done scrolling (default click behavior)
+		  window.location.hash = hash;
+		});
+	  } // End if
+	});
+  });
+
+
+
+// Highlight based on https://braydoncoyer.dev/blog/change-text-highlight-color-with-css
+const colors = ["#DCAB4F", "#8CA592", "#C17F29", "#F6D13A", "#EAB003"];
+
+window.addEventListener("mousedown", () => {
+	const color = colors.shift();
+  document.documentElement.style.setProperty("--highlight-color", color);
+  colors.push(color);
+	// code will go here
+  });
+
+
+// Timeline based on https://codepen.io/ritz078/pen/LGRWjE
 
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
@@ -277,3 +328,4 @@ jQuery(document).ready(function($){
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
 });
+

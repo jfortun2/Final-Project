@@ -1,4 +1,29 @@
 
+/* Basic formatting */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#FooterText{
+  color: #DCAB4F;
+  size: 1em;
+  text-align: center;
+
+
+}
+
+
+h3{
+  font-family: 'Spectral', serif;
+  font-style: bold;
+  padding-bottom: 10px;
+
+}
+
+.Captions{
+  font-style: italic;
+}
 .Eventheader{
   color:black;
   font-family: 'Spectral', serif;
@@ -7,9 +32,13 @@
 
 }
 
+.Eventtext{
+  font-size: 16px;
+}
+
 .Eventimg{
-  width:600px;
-  padding-bottom: 50px;
+  width:70%;
+  padding-bottom: 10px;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -32,10 +61,8 @@ body {
   color: #DCAB4F;
   font-family: 'Spectral', serif;
   font-size: 72px;
-  /* text-align: center; */
   padding-top: 230px;
-  /* display: flex;
-  justify-content: center; */
+  
 }
 
 #logo {
@@ -52,7 +79,79 @@ body {
   padding-bottom: 300px;
 }
 
-/* Timeline */
+/* Text Highlight */
+
+::selection {
+  background: white;
+}
+
+:root {
+  --highlight-color: null;
+}
+
+::selection {
+  background: var(--highlight-color);
+}
+
+
+/* Smoke inspired by https://codepen.io/manuelcoluccia/pen/zYZYyrV */
+
+.Smokingsection{
+  position: relative;
+    align-items: center;
+    min-height: 40vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.Smokingsection.text {
+    position: relative;
+    margin: 40px;
+    user-select: none;
+    font-size: 2.5rem;
+}
+
+section .text span{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+section .active{
+    animation: smoke 2s linear forwards;
+}
+
+@keyframes smoke{
+    0%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+
+    50%{
+        opacity: 1;
+        pointer-events: none;
+    }
+
+    100%{
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+
+
+    }
+}
+
+#SmokeText {
+  color:#DCAB4F;
+  font-size: xx-large;
+  font-family: 'Spectral', serif;
+  text-align: center;
+  padding-top: 100px;
+}
+
+
+/* Timeline based on https://codepen.io/ritz078/pen/LGRWjE */
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -260,7 +359,7 @@ Main Components
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url(../img/cd-arrow.svg) no-repeat 0 0;
+  background: url() no-repeat 0 0;
 }
 .cd-timeline-navigation a.prev {
   left: 0;
@@ -287,8 +386,10 @@ Main Components
 }
 
 .cd-horizontal-timeline .events-content {
+  display:flex;
+  flex-direction: row;
   position: relative;
-  background-color: #C9B389;
+  background-color: white;
   padding-top: 50px;
   border-radius: 10px;
   width: 100%;
@@ -297,6 +398,7 @@ Main Components
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
+
 }
 
 
@@ -322,6 +424,10 @@ Main Components
 }
 .cd-horizontal-timeline .events-content li.selected {
   /* visible event content */
+
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
   position: relative;
   z-index: 2;
   opacity: 1;
@@ -377,10 +483,10 @@ Main Components
     font-size: 4rem;
   }
   .cd-horizontal-timeline .events-content em {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .cd-horizontal-timeline .events-content p {
-    font-size: 1.5rem;
+    font-size: 1 rem;
     padding-bottom: 50px;
   }
 }

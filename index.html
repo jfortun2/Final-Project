@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@700&display=swap" rel="stylesheet">
     <script src="js/jquery-3.6.1.min.js" defer></script>
     <script src="js/main.js" defer></script>
+  
+
+
+    <!-- Content Sources
+    https://pittsburghquarterly.com/articles/a-very-brief-history-of-pittsburgh/
+ -->
 
 
   </head>
@@ -39,6 +45,7 @@
 
     <main>
 
+        
 
         <div class="container-fluid">
 
@@ -64,9 +71,9 @@
             <div class="col-xs-8 col-lg-4 d-flex justify-content-center"> 
                 <img id="Arrow" src="Assets/2x/Asset 1@2x.png" alt="arrow">
 
-       </div>
+            </div>
 
-       <!-- Timeline -->
+       <!-- Timeline based on https://codepen.io/ritz078/pen/LGRWjE-->
 
        <section class="cd-horizontal-timeline">
         <div class="timeline">
@@ -95,109 +102,281 @@
         <div class="events-content">
             
             <ol>
-                <li class="selected">
+                <li data-date="16/01/2014" class="selected">
                 
                     <h3 class="Eventheader">The Smoky City</h3>
 
-                
-                    <img class = "Eventimg" src="Assets/Polution Problem 1.jpeg" alt="Smoggy Pittsburgh">
+                    <!-- hold image -->
+                    <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                    <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
                    
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    <!-- hold text -->
+                    <h3>Home for Industries</h3>
+                    <p class="Eventtext">	
+                        Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                        Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                        The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                        Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+
+                    
+                        <h3>Coal Mining</h3>
+
+                        <p class="Eventtext">
+                    
+                        In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                        Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                        The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                        In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                        Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                        An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                         Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                         This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
                     </p>
+            
                 </li>
+
+
     
                 <li data-date="28/02/2014">
-                    <h2>Event title here</h2>
-                    <em>February 28th, 2014</em>
                     <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                    </p>
+                        <h3 class="Eventheader">The Smoky City</h3>
+
+
+                        <!-- hold image -->
+                        <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                        <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
+                       
+                        <!-- hold text -->
+                        <h3>Home for Industries</h3>
+                        <p class="Eventtext">	
+                            Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                            Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                            The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                            Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+    
+                        
+                            <h3>Coal Mining</h3>
+    
+                            <p class="Eventtext">
+                        
+                            In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                            Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                            The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                            In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                            Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                            An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                             Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                             This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
+                        </p>                    </p>
                 </li>
     
                 <li data-date="20/04/2014">
-                    <h2>Event title here</h2>
-                    <em>March 20th, 2014</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    <h3 class="Eventheader">The Smoky City</h3>
+
+                    <!-- hold image -->
+                    <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                    <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
+                   
+                    <!-- hold text -->
+                    <h3>Home for Industries</h3>
+                    <p class="Eventtext">	
+                        Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                        Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                        The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                        Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+
+                    
+                        <h3>Coal Mining</h3>
+
+                        <p class="Eventtext">
+                    
+                        In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                        Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                        The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                        In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                        Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                        An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                         Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                         This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
                     </p>
                 </li>
     
                 <li data-date="20/05/2014">
-                    <h2>Event title here</h2>
-                    <em>May 20th, 2014</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    <h3 class="Eventheader">The Smoky City</h3>
+
+                    <!-- hold image -->
+                    <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                    <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
+                   
+                    <!-- hold text -->
+                    <h3>Home for Industries</h3>
+                    <p class="Eventtext">	
+                        Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                        Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                        The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                        Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+
+                    
+                        <h3>Coal Mining</h3>
+
+                        <p class="Eventtext">
+                    
+                        In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                        Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                        The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                        In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                        Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                        An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                         Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                         This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
                     </p>
                 </li>
     
                 <li data-date="09/07/2014">
-                    <h2>Event title here</h2>
-                    <em>July 9th, 2014</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    <h3 class="Eventheader">The Smoky City</h3>
+
+                    <!-- hold image -->
+                    <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                    <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
+                   
+                    <!-- hold text -->
+                    <h3>Home for Industries</h3>
+                    <p class="Eventtext">	
+                        Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                        Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                        The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                        Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+
+                    
+                        <h3>Coal Mining</h3>
+
+                        <p class="Eventtext">
+                    
+                        In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                        Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                        The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                        In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                        Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                        An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                         Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                         This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
                     </p>
                 </li>
     
                 <li data-date="30/08/2014">
-                    <h2>Event title here</h2>
-                    <em>August 30th, 2014</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    <h3 class="Eventheader">The Smoky City</h3>
+
+                    <!-- hold image -->
+                    <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                    <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
+                   
+                    <!-- hold text -->
+                    <h3>Home for Industries</h3>
+                    <p class="Eventtext">	
+                        Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                        Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                        The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                        Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+
+                    
+                        <h3>Coal Mining</h3>
+
+                        <p class="Eventtext">
+                    
+                        In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                        Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                        The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                        In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                        Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                        An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                         Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                         This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
                     </p>
                 </li>
     
                 <li data-date="15/09/2014">
-                    <h2>Event title here</h2>
-                    <em>September 15th, 2014</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    <h3 class="Eventheader">The Smoky City</h3>
+
+                    <!-- hold image -->
+                    <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                    <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
+                   
+                    <!-- hold text -->
+                    <h3>Home for Industries</h3>
+                    <p class="Eventtext">	
+                        Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                        Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                        The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                        Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+
+                    
+                        <h3>Coal Mining</h3>
+
+                        <p class="Eventtext">
+                    
+                        In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                        Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                        The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                        In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                        Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                        An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                         Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                         This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
                     </p>
                 </li>
     
                 <li data-date="01/11/2014">
-                    <h2>Event title here</h2>
-                    <em>November 1st, 2014</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                    </p>
-                </li>
-    
-                <li data-date="10/12/2014">
-                    <h2>Event title here</h2>
-                    <em>December 10th, 2014</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                    </p>
-                </li>
-    
-                <li data-date="19/01/2015">
-                    <h2>Event title here</h2>
-                    <em>January 19th, 2015</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                    </p>
-                </li>
-    
-                <li data-date="03/03/2015">
-                    <h2>Event title here</h2>
-                    <em>March 3rd, 2015</em>
-                    <p>	
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                    <h3 class="Eventheader">The Smoky City</h3>
+
+                    <!-- hold image -->
+                    <img class = "Eventimg" src="Assets/Early.jpeg" alt="Smoggy Pittsburgh"> 
+                    <p class="Captions">Pittsburgh 1892 view from Grandview Avenue</p>
+                   
+                    <!-- hold text -->
+                    <h3>Home for Industries</h3>
+                    <p class="Eventtext">	
+                        Due to the foul conditions that plagued Pittsburgh for over a century it was once known as the “Smoky City” or “Hell With the Lid Off”. 
+                        Its geographic location and natural resources made it an ideal home for the industries that inevitably created the pollution problem. 
+                        The city’s dark past has been described as a cautionary tale for cities lacking environmental control.
+                        Pittsburgh has an extremely long history of pollution and the struggle to alleviate it. </p>
+
+                    
+                        <h3>Coal Mining</h3>
+
+                        <p class="Eventtext">
+                    
+                        In 1762 a coal mining seam was discovered along the south bank of the Monongahela River.  
+                        Smoke pollution was the most noticeable effect of coal consumption and gave the city its identity as the “City of Smoke.”
+                        The rivers were a popular transportation route and disposal location for sewage. This caused them to become highly contaminated. 
+                        In 1880, Pittsburgh had hundreds of boats struggling to navigate the crowded rivers. 
+                        Between 1872 and 1908 the city had the highest typhoid fever mortality rate of any city in the nation. 
+                        An individual in Pittsburgh was three times more likely to die of typhoid fever.
+                         Sewage discharge into the rivers was one of the contributing factors to the problem.  
+                         This was also where The city drew its water supply making the sewage discharge into it all the more hazardous.
                     </p>
                 </li>
             </ol>
         </div> <!-- .events-content -->
     </section>
 
+</main>
 
 
+    <!-- Smoke inspired by https://codepen.io/manuelcoluccia/pen/zYZYyrV -->
 
-
-
+<footer>
+    <section class="Smokingsection">
     
+        <p class="text" id="SmokeText"> What will YOUR future look like?</p>
 
-    </main>
+    </section>
+
+    <p id="FooterText"> PUI Final Project by Jessica Fortunato 2022 </p>
+
+
+
+</footer>
+
 
 </body> 
 
