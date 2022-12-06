@@ -1,6 +1,11 @@
 
 
 /* Smooth scroll */
+
+#video{
+  padding-bottom:50px;
+  padding-top: 50px;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -255,7 +260,7 @@ Main Components
   background-image: linear-gradient(to left, black, rgba(248, 248, 248, 0));
 }
 .cd-horizontal-timeline .events {
-  /* this is the grey line/timeline */
+  /* this is the timeline */
   position: absolute;
   z-index: 1;
   left: 0;
@@ -268,7 +273,7 @@ Main Components
   transition: transform 0.4s;
 }
 .cd-horizontal-timeline .filling-line {
-  /* this is used to create the green line filling the timeline */
+  /* this is used to create the line filling the timeline */
   position: absolute;
   z-index: 1;
   left: 0;
@@ -351,7 +356,7 @@ Main Components
 }
 
 .cd-timeline-navigation a {
-  /* these are the left/right arrows to navigate the timeline */
+  /* these are the left/right circles to navigate the timeline */
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -375,7 +380,7 @@ Main Components
   transition: border-color 0.3s;
 }
 .cd-timeline-navigation a::after {
-  /* arrow icon */
+  /* nav icon */
   content: '';
   position: absolute;
   height: 16px;
@@ -455,9 +460,6 @@ Main Components
 .cd-horizontal-timeline .events-content li.selected {
   /* visible event content */
 
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
   position: relative;
   z-index: 2;
   opacity: 1;
@@ -508,6 +510,8 @@ Main Components
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
 }
+
+/* Responsive */
 @media only screen and (min-width: 768px) {
   .cd-horizontal-timeline .events-content h2 {
     font-size: 4rem;

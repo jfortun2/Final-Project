@@ -6,8 +6,7 @@ function myScrollFunction (){
 }
 
 
-
-// smoke inspired by https://codepen.io/manuelcoluccia/pen/zYZYyrV
+// smoke based on https://codepen.io/manuelcoluccia/pen/zYZYyrV
 const text = document.querySelector('.text');
 text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
 
