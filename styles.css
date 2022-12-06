@@ -4,10 +4,15 @@
 
 #video{
   padding-bottom:50px;
-  padding-top: 50px;
+  padding-top: 20px;
+  width:500px;
+  height:500px;
 }
+
 html {
+
   scroll-behavior: smooth;
+
 }
 
 /* Basic formatting */
@@ -429,7 +434,7 @@ Main Components
   border-radius: 10px;
   width: 100%;
   margin: 2em 0;
-  overflow: hidden;
+  overflow: scroll;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
@@ -461,6 +466,7 @@ Main Components
   /* visible event content */
 
   position: relative;
+  overflow: scroll;
   z-index: 2;
   opacity: 1;
   -webkit-transform: translateX(0);
