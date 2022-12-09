@@ -1,3 +1,4 @@
+
 // Scroll into place
 
 function myScrollFunction (){
@@ -6,10 +7,13 @@ function myScrollFunction (){
 }
 
 
-// Smoke based on https://codepen.io/manuelcoluccia/pen/zYZYyrV
+// Smoke based on https://codepen.io/manuelcoluccia/pen/zYZYyrV 
+
+// Selecting section
 const text = document.querySelector('.text');
 text.innerHTML = text.textContent.replace(/\S/g,"<span>$&</span>");
 
+// Creating event
 const letters = document.querySelectorAll('span');
 for (let i = 0; i < letters.length; i++) {
 	letters[i].addEventListener('mouseover',function(){
@@ -18,11 +22,13 @@ for (let i = 0; i < letters.length; i++) {
 	
 }
 
-  
 
 // Highlight based on https://braydoncoyer.dev/blog/change-text-highlight-color-with-css
+
+// Selecting colors
 const colors = ["#DCAB4F", "#8CA592", "#C17F29", "#F6D13A", "#EAB003"];
 
+// Creating event
 window.addEventListener("mousedown", () => {
 	const color = colors.shift();
   document.documentElement.style.setProperty("--highlight-color", color);
@@ -282,10 +288,6 @@ jQuery(document).ready(function($){
 		return Math.min.apply(null, dateDistances);
 	}
 
-	/*
-		How to tell if a DOM element is visible in the current viewport?
-		http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-	*/
 	function elementInViewport(el) {
 		var top = el.offsetTop;
 		var left = el.offsetLeft;
